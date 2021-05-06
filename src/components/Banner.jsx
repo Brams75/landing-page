@@ -53,13 +53,6 @@ const BannerFormInfo = styled.p`
   text-align: center;
 `;
 
-// const BannerFormInput = styled.input`
-//   border: none;
-//   width: 75%;
-//   margin: 0.3rem 0.7rem;
-//   height: 2rem;
-// `;
-
 const BrownButton = withStyles({
   root: {
     backgroundColor: '#460e0d',
