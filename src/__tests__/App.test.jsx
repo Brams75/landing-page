@@ -7,8 +7,12 @@ beforeEach(() => {
 });
 
 describe('Render App', () => {
-  test('renders icon roomIcon', () => {
-    const icon = screen.getByTestId('roomIcon');
-    expect(icon).toBeInTheDocument();
+  test('renders Header Component', () => {
+    const component = screen.getByTestId('header');
+    expect(component).toBeInTheDocument();
+  });
+  test('renders Banner Component', () => {
+    const component = screen.getByTestId('banner');
+    expect(component).toBeInTheDocument();
   });
 });

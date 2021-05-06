@@ -25,7 +25,7 @@ const HeaderContactNumber = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 15rem;
+  width: 17rem;
 `;
 
 const HeaderContactNumberOrange = styled.div`
@@ -54,7 +54,7 @@ const HeaderTitleInfo = styled.p`
 `;
 
 const Header = () => (
-  <Container>
+  <Container data-testid="header">
     <HeaderContact>
       <HeaderContactAdress>
         <RoomIcon data-testid="roomIcon" />

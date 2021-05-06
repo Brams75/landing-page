@@ -25,5 +25,12 @@ create .env EXTEND_ESLINT=true
 
 ## Install Material-UI pickers
 
-yarn add @material-ui/pickers
-yarn add @date-io/date-fns@1.x date-fns
+1. yarn add @material-ui/pickers
+2. yarn add @date-io/date-fns@1.x date-fns
+
+## Install Proptypes
+
+yarn add prop-types
+
+effet de scroll img
+et dark mode

@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import DateFnsUtils from '@date-io/date-fns';
 import { DateTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
-import styled from 'styled-components';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 import restaurantImage from '../__images__/restaurant.jpg';
 
 const Container = styled.div`
@@ -15,16 +18,17 @@ const Container = styled.div`
 `;
 
 const BannerLeft = styled.div`
-  width: 70vw;
+  width: 60vw;
   color: white;
   font-size: 3rem;
+  padding-left: 10rem;
 `;
 const BannerLeftTextTop = styled.p``;
 const BannerLeftTextMiddle = styled.p``;
 const BannerLeftTextBottom = styled.p``;
 
 const BannerRight = styled.div`
-  width: 30vw;
+  width: 40vw;
 `;
 
 const BannerForm = styled.div`
@@ -36,6 +40,7 @@ const BannerForm = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 const BannerFormTitle = styled.h2`
@@ -48,25 +53,29 @@ const BannerFormInfo = styled.p`
   text-align: center;
 `;
 
-const BannerFormInput = styled.input`
-  border: none;
-  width: 75%;
-  margin: 0.3rem 0.7rem;
-  height: 2rem;
-`;
+// const BannerFormInput = styled.input`
+//   border: none;
+//   width: 75%;
+//   margin: 0.3rem 0.7rem;
+//   height: 2rem;
+// `;
 
-const BannerFormButton = styled.button`
-  background: #460e0d;
-  padding: 1rem;
-  color: white;
-  margin: 1rem;
-`;
+const BrownButton = withStyles({
+  root: {
+    backgroundColor: '#460e0d',
+    margin: '1rem',
+    color: 'white',
+    '&:hover': {
+      backgroundColor: '#460e0d',
+    },
+  },
+})(Button);
 
 const actualDate = new Date();
 const Banner = () => {
   const [selectedDate, handleDateChange] = useState(actualDate);
   return (
-    <Container>
+    <Container data-testid="banner">
       <BannerLeft>
         <BannerLeftTextTop>Welcome to</BannerLeftTextTop>
         <BannerLeftTextMiddle>Italian Restaurant</BannerLeftTextMiddle>
@@ -78,13 +87,21 @@ const Banner = () => {
           <BannerFormInfo>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
           </BannerFormInfo>
-          <BannerFormInput />
-          <BannerFormInput />
-          <BannerFormInput />
+          <TextField id="standard-basic" label="NAME" placeholder="YOUR NAME" />
+          <TextField
+            id="standard-basic"
+            label="EMAIL"
+            placeholder="YOUR EMAIL"
+          />
+          <TextField
+            id="standard-basic"
+            label="PHONE NUMBER"
+            placeholder="PHONE NUMBER"
+          />
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <DateTimePicker value={selectedDate} onChange={handleDateChange} />
           </MuiPickersUtilsProvider>
-          <BannerFormButton>REQUEST BOOKING</BannerFormButton>
+          <BrownButton variant="contained">REQUEST BOOKING</BrownButton>
         </BannerForm>
       </BannerRight>
     </Container>
