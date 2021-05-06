@@ -8,6 +8,7 @@ import Food from './Food';
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  height: 40vh;
 `;
 
 const Foods = () => (

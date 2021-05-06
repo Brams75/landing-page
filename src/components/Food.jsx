@@ -11,6 +11,7 @@ const FoodImage = styled.img`
   border-radius: 100%;
   height: 15rem;
   width: 15rem;
+  object-fit: cover;
   border: 0.5rem solid #efe9eb;
 `;
 const FoodName = styled.h2`
