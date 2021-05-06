@@ -2,8 +2,13 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-test('renders learn react link', () => {
+beforeEach(() => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+});
+
+describe('Render App', () => {
+  test('renders icon roomIcon', () => {
+    const icon = screen.getByTestId('roomIcon');
+    expect(icon).toBeInTheDocument();
+  });
 });

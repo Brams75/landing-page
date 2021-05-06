@@ -57,11 +57,11 @@ const Header = () => (
   <Container>
     <HeaderContact>
       <HeaderContactAdress>
-        <RoomIcon />
+        <RoomIcon data-testid="roomIcon" />
         Via Gustavo Modena 26, 20129 Milan, Italy
       </HeaderContactAdress>
       <HeaderContactNumber>
-        <CallIcon />
+        <CallIcon data-testid="callIcon" />
         Call Us Today
         <HeaderContactNumberOrange>+1 800 567 1234</HeaderContactNumberOrange>
       </HeaderContactNumber>

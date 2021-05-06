@@ -22,3 +22,8 @@
 ## Install eslint airbnb
 
 create .env EXTEND_ESLINT=true
+
+## Install Material-UI pickers
+
+yarn add @material-ui/pickers
+yarn add @date-io/date-fns@1.x date-fns
