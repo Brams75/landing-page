@@ -8,10 +8,16 @@ const Container = styled.div`
 const MenuLeft = styled.div`
   width: 35vw;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   text-align: center;
+  margin: 1rem;
 `;
-const MenuLeftTitle = styled.div``;
+
+const MenuLeftText = styled.p`
+  width: 50%;
+`;
+
 const MenuImage = styled.img`
   object-fit: cover;
   width: 30vw;
@@ -20,25 +26,38 @@ const MenuImage = styled.img`
 const MenuRight = styled.div`
   width: 35vw;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   text-align: center;
+  margin: 1rem;
 `;
-const MenuRightTitle = styled.div``;
+const MenuTitle = styled.div`
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 1rem;
+`;
+
+const MenuRightText = styled.p`
+  width: 50%;
+`;
 
 const Menu = ({ img }) => (
   <Container>
     <MenuLeft>
-      <MenuLeftTitle>Left Menu</MenuLeftTitle>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-      sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit.
+      <MenuLeftText>
+        <MenuTitle>FOOD</MenuTitle>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+      </MenuLeftText>
     </MenuLeft>
     <MenuImage src={img} />
     <MenuRight>
-      <MenuRightTitle>RightMenu</MenuRightTitle>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-      sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit.
+      <MenuRightText>
+        <MenuTitle>DELICIOUS</MenuTitle>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+      </MenuRightText>
     </MenuRight>
   </Container>
 );

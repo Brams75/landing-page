@@ -17,7 +17,7 @@ const FoodImage = styled.img`
 const FoodName = styled.h2`
   text-align: center;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
 `;
 
 const FoodDescription = styled.h2`

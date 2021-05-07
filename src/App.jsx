@@ -26,7 +26,7 @@ const App = () => (
     <Menu img={pastaMenuImage} />
     <Comment />
     <Menu img={pasta1MenuImage} />
-    <Table />
+    <Table orange />
     <Footer />
   </Container>
 );
