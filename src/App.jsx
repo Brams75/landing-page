@@ -15,6 +15,7 @@ const Container = styled.div`
   padding: 1rem;
   min-height: 100vh;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 `;
 
 const App = () => (
