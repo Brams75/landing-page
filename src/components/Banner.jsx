@@ -82,6 +82,7 @@ const BrownButton = withStyles({
 const actualDate = new Date();
 const Banner = () => {
   const [selectedDate, handleDateChange] = useState(actualDate);
+
   return (
     <Container data-testid="banner">
       <BannerLeft>
