@@ -6,6 +6,7 @@ import Foods from './components/Foods';
 import Table from './components/Table';
 import Menu from './components/Menu';
 import Comment from './components/Comment';
+import Footer from './components/Footer';
 
 import pastaMenuImage from './__images__/pastaMenu.jpg';
 import pasta1MenuImage from './__images__/pasta1Menu.jpg';
@@ -26,6 +27,7 @@ const App = () => (
     <Comment />
     <Menu img={pasta1MenuImage} />
     <Table />
+    <Footer />
   </Container>
 );
 export default App;

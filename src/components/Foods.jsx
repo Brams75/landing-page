@@ -10,12 +10,19 @@ const Container = styled.div`
   justify-content: center;
   height: 40vh;
 `;
+const ContainerFoods = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+`;
 
 const Foods = () => (
   <Container>
-    <Food name="PIZZA" img={pizza} />
-    <Food name="FISH" img={fish} />
-    <Food name="PASTA" img={pasta} />
+    <ContainerFoods>
+      <Food name="PIZZA" img={pizza} />
+      <Food name="FISH" img={fish} />
+      <Food name="PASTA" img={pasta} />
+    </ContainerFoods>
   </Container>
 );
 export default Foods;
