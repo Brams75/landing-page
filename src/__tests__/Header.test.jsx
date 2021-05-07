@@ -1,10 +1,12 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import Header from '../components/Header';
 
 beforeEach(() => {
   render(<Header />);
 });
+
+afterEach(cleanup);
 
 describe('Render Header', () => {
   test('renders icon roomIcon', () => {

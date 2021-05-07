@@ -1,10 +1,12 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import Foods from '../components/Foods';
 
 beforeEach(() => {
   render(<Foods />);
 });
+
+afterEach(cleanup);
 
 describe('Render Foods', () => {
   test('renders text PIZZA', () => {

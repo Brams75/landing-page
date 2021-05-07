@@ -1,10 +1,13 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import Banner from '../components/Banner';
 
 beforeEach(() => {
   render(<Banner />);
 });
+
+afterEach(cleanup);
+
 describe('Render Banner', () => {
   test('renders text Welcome to', () => {
     const text = screen.getByText(/Welcome to/i);

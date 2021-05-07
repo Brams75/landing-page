@@ -1,10 +1,12 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import Table from '../components/Table';
 
 beforeEach(() => {
   render(<Table />);
 });
+
+afterEach(cleanup);
 
 describe('Render Table', () => {
   test('renders text WE OFFER THE BEST MEALS AT THE BEST VALUE', () => {

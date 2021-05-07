@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const BannerLeft = styled.div`
-  width: 60vw;
+  width: 50%;
   color: white;
   font-size: 3rem;
   padding-left: 10rem;
@@ -28,14 +28,14 @@ const BannerLeftTextMiddle = styled.p``;
 const BannerLeftTextBottom = styled.p``;
 
 const BannerRight = styled.div`
-  width: 40vw;
+  width: 50%;
 `;
 
 const BannerForm = styled.div`
   background: #fd4f2d;
   min-height: 50vh;
-  min-width: 20rem;
-  max-width: 20rem;
+  width: 40%;
+  margin-left: 30%;
   color: white;
   display: flex;
   flex-direction: column;
