@@ -21,14 +21,14 @@ const HeaderContactAdress = styled.div`
   align-items: center;
 `;
 
-const HeaderContactNumber = styled.div`
+export const HeaderContactNumber = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 17rem;
 `;
 
-const HeaderContactNumberOrange = styled.div`
+export const HeaderContactNumberOrange = styled.div`
   color: #ff5c39;
 `;
 
@@ -43,14 +43,21 @@ const HeaderTitleDescription = styled.div``;
 
 const HeaderTitleDescriptionOrange = styled.span`
   color: #ff5c39;
+  font-size: 2rem;
+  font-weight: bold;
 `;
 const HeaderTitleDescriptionBrown = styled.span`
   margin-left: 1rem;
   color: #460e0d;
+  font-size: 2rem;
+  font-weight: bold;
 `;
 
 const HeaderTitleInfo = styled.p`
   color: #460e0d;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: italic;
 `;
 
 const Header = () => (

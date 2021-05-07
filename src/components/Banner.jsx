@@ -18,24 +18,28 @@ const Container = styled.div`
 `;
 
 const BannerLeft = styled.div`
-  width: 50%;
+  width: 70%;
   color: white;
   font-size: 3rem;
-  padding-left: 10rem;
+  margin-left: 25%;
 `;
 const BannerLeftTextTop = styled.p``;
-const BannerLeftTextMiddle = styled.p``;
+const BannerLeftTextMiddle = styled.p`
+  font-weight: bold;
+  font-size: 4rem;
+`;
 const BannerLeftTextBottom = styled.p``;
 
 const BannerRight = styled.div`
-  width: 50%;
+  min-width: 50%;
+  margin-left: -20%;
 `;
 
 const BannerForm = styled.div`
   background: #fd4f2d;
   min-height: 50vh;
-  width: 40%;
-  margin-left: 30%;
+  width: 30%;
+  margin-left: 37.5%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -46,6 +50,8 @@ const BannerForm = styled.div`
 const BannerFormTitle = styled.h2`
   text-align: center;
   margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
 `;
 
 const BannerFormInfo = styled.p`
@@ -53,10 +59,19 @@ const BannerFormInfo = styled.p`
   text-align: center;
 `;
 
+const WhiteTextField = withStyles({
+  root: {
+    backgroundColor: '#fff',
+    margin: '0.2rem',
+    width: '75%',
+  },
+})(TextField);
+
 const BrownButton = withStyles({
   root: {
     backgroundColor: '#460e0d',
     margin: '1rem',
+    padding: '0.8rem',
     color: 'white',
     '&:hover': {
       backgroundColor: '#460e0d',
@@ -80,16 +95,20 @@ const Banner = () => {
           <BannerFormInfo>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
           </BannerFormInfo>
-          <TextField id="standard-basic" label="NAME" placeholder="YOUR NAME" />
-          <TextField
+          <WhiteTextField
             id="standard-basic"
-            label="EMAIL"
-            placeholder="YOUR EMAIL"
+            placeholder="YOUR NAME"
+            color="secondary"
           />
-          <TextField
+          <WhiteTextField
             id="standard-basic"
-            label="PHONE NUMBER"
+            placeholder="YOUR EMAIL"
+            color="secondary"
+          />
+          <WhiteTextField
+            id="standard-basic"
             placeholder="PHONE NUMBER"
+            color="primary"
           />
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <DateTimePicker value={selectedDate} onChange={handleDateChange} />

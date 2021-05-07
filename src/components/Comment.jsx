@@ -22,13 +22,19 @@ const CommentPicture = styled.img`
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
+  border: 0.5rem solid #efe9eb;
 `;
 
-const CommentParagraph = styled.div``;
+const CommentParagraph = styled.div`
+  margin: 1rem;
+`;
 
 const CommentText = styled.p``;
 
-const CommentName = styled.p``;
+const CommentName = styled.p`
+  font-weight: bold;
+  margin: 1rem;
+`;
 
 const Comment = () => (
   <Container>
@@ -40,7 +46,7 @@ const Comment = () => (
           dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
           amet, consectetur adipiscing elit.
         </CommentText>
-        <CommentName>-JHON SMITH</CommentName>
+        <CommentName>- JHON SMITH</CommentName>
       </CommentParagraph>
     </CommentContainer>
   </Container>
