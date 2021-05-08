@@ -8,7 +8,10 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
-  z-index: 1000;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const Footer = () => (

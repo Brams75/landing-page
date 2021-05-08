@@ -13,6 +13,9 @@ const Container = styled.div`
   filter: sepia(40%);
   display: flex;
   align-items: center;
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const BannerLeft = styled.div`
@@ -20,6 +23,13 @@ const BannerLeft = styled.div`
   color: white;
   font-size: 3rem;
   margin-left: 25%;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    texta-align: center;
+    padding: 1.5rem;
+  }
 `;
 const BannerLeftTextTop = styled.p``;
 const BannerLeftTextMiddle = styled.p`
@@ -31,18 +41,28 @@ const BannerLeftTextBottom = styled.p``;
 const BannerRight = styled.div`
   min-width: 50%;
   margin-left: -20%;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 
 const BannerForm = styled.div`
   background: #fd4f2d;
   min-height: 50vh;
-  width: 30%;
+  min-width: 20rem;
+  max-width: 30%;
   margin-left: 37.5%;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 900px) {
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 `;
 
 const BannerFormTitle = styled.h2`

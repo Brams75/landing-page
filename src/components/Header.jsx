@@ -13,12 +13,17 @@ const HeaderContact = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 5vh;
+  min-height: 5vh;
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    text-align: center;
+  }
 `;
 
 const HeaderContactAdress = styled.div`
   display: flex;
   align-items: center;
+  padding: 0.5rem;
 `;
 
 export const HeaderContactNumber = styled.div`
@@ -26,6 +31,7 @@ export const HeaderContactNumber = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 17rem;
+  padding: 0.5rem;
 `;
 
 export const HeaderContactNumberOrange = styled.div`
@@ -33,11 +39,15 @@ export const HeaderContactNumberOrange = styled.div`
 `;
 
 const HeaderTitle = styled.div`
-  height: 5vh;
+  min-height: 5vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    text-align: center;
+  }
 `;
 
 const HeaderTitleDescription = styled.div``;

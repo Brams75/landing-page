@@ -4,12 +4,11 @@ import commentImage from '../__images__/commentImage.jpg';
 
 const Container = styled.div`
   background: #fd4f2d;
-  height: 30vh;
+  min-height: 30vh;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
 `;
 
 const CommentContainer = styled.div`

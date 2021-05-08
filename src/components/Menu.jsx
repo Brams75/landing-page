@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 
 const Container = styled.div`
   display: flex;
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+  }
 `;
 const MenuLeft = styled.div`
   width: 35vw;
@@ -12,16 +15,25 @@ const MenuLeft = styled.div`
   align-items: center;
   text-align: center;
   margin: 1rem;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 const MenuLeftText = styled.div`
   width: 50%;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 const MenuImage = styled.img`
   object-fit: cover;
   width: 30vw;
   height: 35vh;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 const MenuRight = styled.div`
   width: 35vw;
@@ -29,15 +41,24 @@ const MenuRight = styled.div`
   align-items: center;
   text-align: center;
   margin: 1rem;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 const MenuTitle = styled.h2`
   font-size: 1.6rem;
   font-weight: bold;
   margin: 1rem;
+  @media screen and (max-width: 900px) {
+    text-align: center;
+  }
 `;
 
 const MenuRightText = styled.div`
   width: 50%;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 const Menu = ({ img }) => (

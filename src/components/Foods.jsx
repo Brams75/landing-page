@@ -8,13 +8,16 @@ import Food from './Food';
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  height: 40vh;
+  min-height: 40vh;
   padding: 4rem;
 `;
 const ContainerFoods = styled.div`
   display: flex;
   justify-content: space-around;
   width: 80%;
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const Foods = () => (
