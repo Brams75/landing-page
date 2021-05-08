@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 const Container = styled.div`
   display: flex;
-  z-index: 1000;
 `;
 const MenuLeft = styled.div`
   width: 35vw;

@@ -7,7 +7,6 @@ import { WhiteTextField, BrownButton } from '../customedComponents';
 import restaurantImage from '../../__images__/restaurant.jpg';
 
 const Container = styled.div`
-  z-index: -1000;
   min-height: 50vh;
   background: url(${restaurantImage});
   background-position: center;

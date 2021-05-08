@@ -13,7 +13,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  padding: 3rem;
 `;
 const TableTitle = styled.h2`
   font-size: 1.6rem;

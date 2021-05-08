@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   height: 40vh;
-  z-index: 1000;
+  padding: 4rem;
 `;
 const ContainerFoods = styled.div`
   display: flex;
