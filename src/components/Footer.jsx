@@ -9,6 +9,7 @@ const Container = styled.div`
   align-items: center;
   padding-top: 1rem;
   padding-top: 0.5rem;
+  z-index: 1000;
 `;
 
 const Footer = () => (

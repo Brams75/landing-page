@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const Container = styled.div`
   display: flex;
+  z-index: 1000;
 `;
 const MenuLeft = styled.div`
   width: 35vw;
@@ -14,7 +15,7 @@ const MenuLeft = styled.div`
   margin: 1rem;
 `;
 
-const MenuLeftText = styled.p`
+const MenuLeftText = styled.div`
   width: 50%;
 `;
 
@@ -30,13 +31,13 @@ const MenuRight = styled.div`
   text-align: center;
   margin: 1rem;
 `;
-const MenuTitle = styled.div`
+const MenuTitle = styled.h2`
   font-size: 1.6rem;
   font-weight: bold;
   margin: 1rem;
 `;
 
-const MenuRightText = styled.p`
+const MenuRightText = styled.div`
   width: 50%;
 `;
 

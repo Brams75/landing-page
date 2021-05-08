@@ -13,6 +13,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
 `;
 const TableTitle = styled.h2`
   font-size: 1.6rem;
@@ -50,6 +51,8 @@ const Table = ({ orange }) => (
     <OrangeButton>BOOK A TABLE</OrangeButton>
   </Container>
 );
+
+Table.defaultProps = { orange: false };
 
 Table.propTypes = {
   orange: PropTypes.bool.isRequired,
