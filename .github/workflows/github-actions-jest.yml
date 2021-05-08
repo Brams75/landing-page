@@ -1,4 +1,4 @@
-name: CI
+name: Jest And React Testing Library Tests
 on: push
 jobs:
   build:
