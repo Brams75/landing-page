@@ -7,7 +7,7 @@ beforeEach(() => {
   render(<Banner />);
 });
 
-afterEach(cleanup);
+afterEach(cleanup
 
 describe('Render Banner', () => {
   test('renders text Welcome to', () => {
