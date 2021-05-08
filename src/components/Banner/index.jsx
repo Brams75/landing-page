@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import DateFnsUtils from '@date-io/date-fns';
 import { DateTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
-import restaurantImage from '../__images__/restaurant.jpg';
+import { WhiteTextField, BrownButton } from '../customedComponents';
+
+import restaurantImage from '../../__images__/restaurant.jpg';
 
 const Container = styled.div`
   min-height: 50vh;
@@ -59,25 +58,11 @@ const BannerFormInfo = styled.p`
   text-align: center;
 `;
 
-const WhiteTextField = withStyles({
-  root: {
-    backgroundColor: '#fff',
-    margin: '0.2rem',
-    width: '75%',
-  },
-})(TextField);
-
-const BrownButton = withStyles({
-  root: {
-    backgroundColor: '#460e0d',
-    margin: '1rem',
-    padding: '0.8rem',
-    color: 'white',
-    '&:hover': {
-      backgroundColor: '#460e0d',
-    },
-  },
-})(Button);
+const BannerDate = styled.div`
+  background: white;
+  min-width: 75%;
+  margin-top: 0.2rem;
+`;
 
 const actualDate = new Date();
 const Banner = () => {
@@ -96,24 +81,18 @@ const Banner = () => {
           <BannerFormInfo>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
           </BannerFormInfo>
-          <WhiteTextField
-            id="standard-basic"
-            placeholder="YOUR NAME"
-            color="secondary"
-          />
-          <WhiteTextField
-            id="standard-basic"
-            placeholder="YOUR EMAIL"
-            color="secondary"
-          />
-          <WhiteTextField
-            id="standard-basic"
-            placeholder="PHONE NUMBER"
-            color="primary"
-          />
-          <MuiPickersUtilsProvider utils={DateFnsUtils}>
-            <DateTimePicker value={selectedDate} onChange={handleDateChange} />
-          </MuiPickersUtilsProvider>
+          <WhiteTextField placeholder="YOUR NAME" color="secondary" />
+          <WhiteTextField placeholder="YOUR EMAIL" color="secondary" />
+          <WhiteTextField placeholder="PHONE NUMBER" color="primary" />
+          <BannerDate>
+            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+              <DateTimePicker
+                value={selectedDate}
+                onChange={handleDateChange}
+                fullWidth
+              />
+            </MuiPickersUtilsProvider>
+          </BannerDate>
           <BrownButton variant="contained">REQUEST BOOKING</BrownButton>
         </BannerForm>
       </BannerRight>

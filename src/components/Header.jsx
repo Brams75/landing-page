@@ -4,7 +4,7 @@ import RoomIcon from '@material-ui/icons/Room';
 import CallIcon from '@material-ui/icons/Call';
 
 const Container = styled.div`
-  height: 10vh;
+  height: auto;
   color: white;
 `;
 
@@ -37,6 +37,7 @@ const HeaderTitle = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem;
 `;
 
 const HeaderTitleDescription = styled.div``;

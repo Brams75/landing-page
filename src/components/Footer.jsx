@@ -7,8 +7,8 @@ const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 1rem;
-  padding-top: 0.5rem;
+  padding: 1rem;
+  z-index: 1000;
 `;
 
 const Footer = () => (

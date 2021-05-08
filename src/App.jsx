@@ -12,10 +12,10 @@ import pastaMenuImage from './__images__/pastaMenu.jpg';
 import pasta1MenuImage from './__images__/pasta1Menu.jpg';
 
 const Container = styled.div`
-  padding: 1rem;
   min-height: 100vh;
   font-family: sans-serif;
   scroll-behavior: smooth;
+  z-index: 1000;
 `;
 
 const App = () => (
