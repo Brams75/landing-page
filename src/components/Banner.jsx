@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import DateFnsUtils from '@date-io/date-fns';
 import { DateTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { WhiteTextField, BrownButton } from '../customedComponents';
-
-import restaurantImage from '../../__images__/restaurant.jpg';
+import { WhiteTextField, BrownButton } from './customedComponents';
+import restaurantImage from '../__images__/restaurant.jpg';
 
 const Container = styled.div`
   min-height: 50vh;
