@@ -27,8 +27,10 @@ const BannerLeft = styled.div`
     width: 100%;
     margin: 0;
     font-size: 2rem;
-    texta-align: center;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 const BannerLeftTextTop = styled.p``;
@@ -100,9 +102,9 @@ const Banner = () => {
           <BannerFormInfo>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
           </BannerFormInfo>
-          <WhiteTextField placeholder="YOUR NAME" color="secondary" />
-          <WhiteTextField placeholder="YOUR EMAIL" color="secondary" />
-          <WhiteTextField placeholder="PHONE NUMBER" color="primary" />
+          <WhiteTextField placeholder="YOUR NAME" />
+          <WhiteTextField placeholder="YOUR EMAIL" />
+          <WhiteTextField placeholder="PHONE NUMBER" />
           <BannerDate>
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
               <DateTimePicker

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import styled from 'styled-components';
 import commentImage from '../__images__/commentImage.jpg';
@@ -30,7 +31,6 @@ const CommentParagraph = styled.div`
 `;
 
 const CommentText = styled.p``;
-
 const CommentName = styled.p`
   font-weight: bold;
   margin: 1rem;

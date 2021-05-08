@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -6,7 +7,7 @@ export const WhiteTextField = withStyles({
   root: {
     backgroundColor: '#fff',
     margin: '0.2rem',
-    width: '75%',
+    minWidth: '75%',
   },
 })(TextField);
 

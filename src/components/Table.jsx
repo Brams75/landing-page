@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -58,7 +59,7 @@ const Table = ({ orange }) => (
 Table.defaultProps = { orange: false };
 
 Table.propTypes = {
-  orange: PropTypes.bool.isRequired,
+  orange: PropTypes.bool,
 };
 
 export default Table;
