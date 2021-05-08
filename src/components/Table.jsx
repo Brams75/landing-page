@@ -7,7 +7,7 @@ import { withStyles } from '@material-ui/core/styles';
 const Container = styled.div`
   background: #460e0d;
   background-size: cover;
-  height: 15rem;
+  min-height: 15rem;
   color: white;
   display: flex;
   flex-direction: column;
@@ -20,6 +20,9 @@ const TableTitle = styled.h2`
   font-weight: bold;
   color: ${({ orange }) => (orange ? '#FD4F2D' : 'white')};
   margin: 0.5rem;
+  @media screen and (max-width: 900px) {
+    text-align: center;
+  }
 `;
 const TableText = styled.p`
   text-align: center;
