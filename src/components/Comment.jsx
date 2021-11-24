@@ -1,7 +1,7 @@
-/* eslint-disable linebreak-style */
-import React from 'react';
-import styled from 'styled-components';
-import commentImage from '../__images__/commentImage.jpg';
+/* eslint-disable */
+import React from "react";
+import styled from "styled-components";
+import commentImage from "../__images__/commentImage.jpg";
 
 const Container = styled.div`
   background: #fd4f2d;
